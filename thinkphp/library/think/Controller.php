@@ -77,6 +77,21 @@ class Controller
         }
     }
 
+    /**
+     * 判断用户是否登录
+     * @author 贺强
+     * @time   2019-01-21 15:22:44
+     */
+    protected function is_login()
+    {
+        $admin  = session('admin');
+        $action = $this->request->get('action');
+        if (empty($admin) && empty($action)) {
+            $this->error('登录超时，请重新登录', url('/login'));
+        }
+        return $admin;
+    }
+
     // 初始化
     protected function initialize()
     {}

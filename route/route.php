@@ -16,5 +16,5 @@ Route::get('think', function () {
 Route::get('hello/:name', 'index/hello');
 
 return [
-
+    '/upload' => 'admin/Upload/upload_img', // 上传图片
 ];

@@ -10,6 +10,6 @@ class UserModel extends CommonModel
 {
     public function __construct()
     {
-        $this->table = 'users';
+        $this->table = 't_user';
     }
 }

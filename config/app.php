@@ -143,4 +143,6 @@ return [
     // 异常处理handle类 留空使用 \think\exception\Handle
     'exception_handle'       => '',
 
+    // 自定义属性
+    'PAGESIZE'               => 10, // 每页多少条
 ];
