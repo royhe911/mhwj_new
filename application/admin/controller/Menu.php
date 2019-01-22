@@ -62,7 +62,6 @@ class Menu extends \think\Controller
      */
     public function edit(MenuModel $m)
     {
-        // 判断是否有权限访问或操作
         $admin = $this->is_login();
         if ($this->request->isAjax()) {
             $param = $this->request->post();
